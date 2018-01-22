@@ -1,0 +1,12 @@
+{
+  "name": "voting-dapps",
+  "version": "1.0.0",
+  "description": "a decentralized voting apps",
+  "author": "runping",
+  "repository": "git@github.com:pingrunhuang/voting-dapps.git",
+  "devDependencies": {
+    "ethereumjs-testrpc": "^4.1.3",
+    "solc": "^0.4.17",
+    "web3": "^0.20.1"
+  }
+}
