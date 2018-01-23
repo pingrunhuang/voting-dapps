@@ -12,10 +12,10 @@ byteCode = compiledCode.contracts[':Voting'].bytecode;
 
 deployedContract = votingContract.new(['Rama','Nick','Jose'],{data: byteCode, from: web3.eth.accounts[0], gas: 4700000});
 
-contractInstance = votingContract.at(deployedContract.address);
-
-while(typeof contractInstance.address == 'undefined') {
+while(typeof deployedContract.address === 'undefined') {
     console.log("contract not mined yet")
 }
+
+contractInstance = votingContract.at(deployedContract.address);
 
 console.log(contractInstance.address);
